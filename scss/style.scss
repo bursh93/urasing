@@ -1,1 +1,58 @@
 @import "_header";
+@import "_null";
+$minwidth: 320px;
+$mw: 1170;
+$md1: $mw + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+* {
+    outline: none !important;
+}
+body {
+    font-size: 18px;
+    &.lock {
+        overflow: auto;
+        @media (max-width: $md2+px) {
+            overflow: auto;
+        }
+    }
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+    // оболочка нужна что бы если какие косяки то они не вылезали за эти приделы
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    &.loaded {
+    }
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+.container {
+    transition: 1s;
+    position: relative;
+    max-width: $mw + px;
+    margin: 0 auto;
+    width: 100%;
+    border: 2px solid red;
+    @media (max-width: $md1+px) {
+        max-width: 970px;
+    }
+    @media (max-width: $md2+px) {
+        max-width: 750px;
+    }
+    @media (max-width: $md3+px) {
+        max-width: none;
+        padding: 0px;
+    }
+}
+.block1 {
+    background-image: url("../img/block1-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
