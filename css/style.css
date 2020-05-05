@@ -1,0 +1,39 @@
+header {
+  background-color: gray;
+  color: black;
+}
+
+.wrapper {
+  font-size: 22px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  color: rgba(0, 0, 0, 0.63);
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 22px;
+}
+
+div {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  color: blue;
+  font-style: 44px;
+}
+
+.wrapperr {
+  width: 100%;
+}
+
+.wrapperr .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.wrapperr .grid .content h5 {
+  color: black;
+  font-size: 44px;
+}
