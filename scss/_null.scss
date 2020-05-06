@@ -28,18 +28,20 @@ section {
 html,
 body {
 	height: 100%;
+	background: rgba(46, 44, 44, 0.582);
+	height: 100%;
+	background-color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
 }
 body {
-	line-height: 1;
-
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
-input,
-button,
-textarea {
-}
+
 input::-ms-clear {
 	display: none;
 }
